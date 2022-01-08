@@ -1,0 +1,222 @@
+blockquote {
+    margin: 0;
+    background-color: #dadada;
+    padding: 5px 30px;
+}
+
+.line {
+    background-color: rgb(128, 128, 128);
+    height: 1px;
+}
+
+#header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #333;
+}
+
+.left-header h2 {
+    padding: 25px;
+    color: #333;
+    margin-left: 50px;
+}
+
+.left-header li {
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.left-header li::after {
+    position: absolute;
+    content: "";
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: all .25s;
+}
+
+.left-header li:hover::after {
+    width: 100%;
+}
+
+#post {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.post-left, .post-right {
+    display: inline-block;
+}
+
+
+.post-left {
+    position: fixed;
+    width: 18%;
+    padding: 20px;
+    align-self: center;
+    top: 200px;
+    left: 0;
+    right: 0;
+}
+
+.post-left h4 {
+    font-weight: 500;
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+
+.icon {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.iconHeart {
+    margin-right: 30px;
+}
+
+.iconComment {
+    margin-left: 30px;
+}
+
+.post-right {
+    width: 80%;
+    margin-left: 20%;
+}
+
+.avatar {
+    display: flex;
+    margin-top: 20px;
+}
+
+.avatar img {
+    width: 60px;
+    height: 60px;
+    border-radius: 100rem;
+}
+
+.avatar .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.avatar p {
+    padding: 0;
+    margin: 0;
+    margin-left: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.avatar .time {
+    display: flex;
+    width: 165px;
+    justify-content: space-between;
+}
+
+.time span {
+    color: #333;
+    font-size: 14px;
+}
+
+.content-post {
+    width: 80%;
+    text-align: left;
+    margin-top: 30px;
+    letter-spacing: .2px;
+    line-height: 2.3rem;
+    font-size: 18px;
+}
+
+
+.footer {
+    width: 100%;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+.content-comment {
+    width: 70%;
+}
+
+.content-comment .header-comment {
+    margin: 60px 0px 10px 0px;
+}
+
+
+.content-comment .btn-input {
+    float: right;
+    margin-top: 10px;
+    background-color: rgb(70, 207, 150);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 2px;
+    transition: all .25s;
+}
+
+.content-comment .btn-input:hover {
+    cursor: pointer;
+    background-color: rgb(52, 179, 126);
+}
+
+.content-comment .btn-input::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.content-user-comment {
+    margin-top: 150px;
+}
+
+.user-comment {
+    margin-top: 15px;
+    border: .25px solid rgba(0, 0, 0, 0.219);
+    padding: 10px;
+    border-radius: 2px;
+}
+
+.user-comment .content {
+    padding: 20px;
+    background-color: rgb(230, 230, 230);
+    margin-top: 20px;
+}
+
+.text-message {
+    margin-top: 20px;
+}
+
+.btn-delete-comment {
+    padding: 10px 20px;
+    background-color: #f35656;
+    text-decoration: none;
+    margin: 0;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.avatar-flex {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sub-avatar {
+    display: flex;
+}
+
+.msg-comment {
+    margin-bottom: 20px;
+}

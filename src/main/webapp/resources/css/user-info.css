@@ -1,0 +1,24 @@
+
+.content-user {
+    margin-top: 140px;
+    text-align: center;
+}
+
+.content-user span {
+    display: inline-block;
+    width: 150px;
+    text-align: left;
+}
+
+.input {
+    padding: 10px 20px;
+}
+
+.btn-update {
+    padding: 10px 15px;
+    color: #fff;
+    background-color: rgb(86, 202, 164);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

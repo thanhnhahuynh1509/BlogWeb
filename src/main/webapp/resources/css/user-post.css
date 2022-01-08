@@ -1,0 +1,16 @@
+.message {
+    margin-top: 140px;
+    text-align: center;
+}
+
+.message .click {
+    text-decoration: underline;
+    color: #426fd4;
+}
+
+.title-body {
+    margin-top: 140px;
+    font-size: 32px;
+    text-align: center;
+}
+

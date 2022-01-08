@@ -1,0 +1,156 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+}
+
+*::selection {
+    background-color: #88d761;
+}
+
+a {
+    color: rgb(98, 144, 187);
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #333;
+}
+
+.left-header h2 {
+    padding: 0;
+    margin: 0;
+    padding: 25px;
+    color: #333;
+    margin-left: 50px;
+    display: inline-block;
+}
+
+.left-header ul {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+}
+
+.left-header li {
+    position: relative;
+    margin: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    display: inline-block;
+}
+
+.left-header li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.left-header li::after {
+    position: absolute;
+    content: "";
+    bottom: -2px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: all .25s;
+}
+
+.left-header li:hover::after {
+    width: 100%;
+}
+
+
+.middle-header input {
+    outline-color: rgb(98, 144, 187);
+    border: 2px solid #ccc;
+    font-size: 18px;
+    padding: 10px 20px;
+    color: #333;
+    border-radius: 4px 0px 0px 4px;
+    width: 400px;
+    margin: 0;
+}
+
+.middle-header .logo-search {
+    display: inline-block;
+    padding: 13.2px;
+    background-color: rgb(98, 144, 187);
+    margin-left: -6px;
+    color: #fff;
+    transform: translateY(-1px);
+    border-radius: 0px 4px 4px 0px;
+    transition: all .25s;
+}
+
+.middle-header .logo-search:hover {
+    background-color: rgb(59, 105, 148);
+}
+
+.right-header {
+    position: relative;
+    margin-right: 20px;
+}
+
+.right-header a {
+    text-decoration: none;
+    color: #333;
+}
+
+.text-login {
+    color: rgb(98, 144, 187) !important;
+    text-decoration: underline rgb(98, 144, 187) !important;
+}
+
+
+.btn-user {
+    text-decoration: none;
+    padding: 14px 20px;
+    border-radius: 100rem;
+    font-weight: 900;
+    color: #5e5e5e;
+    background-color: #b0c6a5;
+}
+
+
+.right-header ul {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: -130px;
+    background-color: #fff;
+    box-shadow: 0px 0px 5px #333;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.right-header ul li {
+    display: block;
+}
+
+
+.right-header ul li a {
+    cursor: pointer;
+    padding: 15px 10px;
+    display: block;
+    color: #333;
+}
+
+.right-header ul li a:hover {
+    color: #fff;
+    background-color: rgb(73, 90, 97);
+}
+
+.right-header:hover ul{
+    padding: 0;
+    margin: 0;
+    display: block;
+}
